@@ -1,0 +1,170 @@
+/* body{
+    font-family: sans-serif;
+    font-family: "Sen", sans-serif;
+} */
+
+.contenedor-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 2;
+    --transform: translateY(-100vh);
+    --transition: transform 0.8s;
+}
+
+.modal{
+    margin: auto;
+    width: 50%;
+    max-width: 500px;
+    max-height: 90%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+.modal-vermas{
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+.contenedor_columnas_modal{
+    margin-top: 15px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* border: 5px solid rgb(224, 150, 150); */
+}
+.columna_modal {
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid green; */
+}
+.columna_modal > h3 {
+    font-size: 23px;
+}
+.columna_modal > h4 {
+    color: rgb(32, 56, 100);
+    font-weight: 900;
+    font-size: 20px;
+}
+/* .columna_modal > h5 {
+    font-size: 15px;
+} */
+.columna_modal > h5 > span, .columna_modal > h5 {
+    font-size: 18px;
+}
+
+.contenedor-modal.active {
+    opacity: 1;
+    visibility: visible;
+    --transform: translateY(0);
+}
+
+.titulo-form{
+    font-size: clamp(10px, 4vw, 25px);
+    position: relative;
+}
+
+.titulo-form::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(32, 56, 100);
+    left: 0;
+    bottom: 0;
+}
+    
+.input{
+    width: 100%;
+    margin-top: 10px;
+}
+.input input, textarea, .select{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid rgb(104, 105, 105);
+    border-radius: 6px;
+    padding: 0 15px;
+    font-family: 'sen';
+}
+
+.big > textarea{
+    padding: 10px 15px;
+    height: 70px;
+    resize: none;
+}
+
+.input label{
+    position: relative;
+    font-size: 18px;
+}
+
+.input > select{
+    width: 100%;
+    height: 45px;
+}
+
+.columna{
+    display: flex;
+    column-gap: 15px;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.botones > button{
+    border: none;
+    width: 30%;
+    height: 45px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.botones .registrar{
+    background-color: white;
+    color: rgb(63, 194, 63);
+    border: 3px solid rgb(63, 194, 63);
+}
+.botones .registrar:hover{
+    background-color: rgb(63, 194, 63);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.botones .cerrar{
+    background-color: white;
+    color: rgb(190, 53, 53);
+    border: 3px solid rgb(190, 53, 53);
+}
+.botones .cerrar:hover{
+    background-color: rgb(190, 53, 53);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* .invisible{
+
+} */
