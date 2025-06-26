@@ -47,7 +47,7 @@ if (isset($_GET['views'])) {
     $vista = $viewsController->obtenerVistaControlador($url[0]);
 
     if ($vista == "login" || $vista == "404") {
-        echo $_GET['views'];
+        // echo $_GET['views'];
         require_once "./Aplicacion/Vistas/" . $vista . "-view.php";
     } else {
         // Validacion que cierra la sesion para evitar saltos en la URL
@@ -61,7 +61,7 @@ if (isset($_GET['views'])) {
         //     echo $u.",";
         // }
         // echo $url[0];
-        echo $_GET['views'];
+        // echo $_GET['views'];
         require_once "./Aplicacion/Templates/header.php";
         require_once $vista;
         require_once "./Aplicacion/Templates/footer.php";

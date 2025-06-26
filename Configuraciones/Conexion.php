@@ -2,7 +2,7 @@
 
     // DATOS PARA LA CONEXION A LA BASE DE DATOS
     const DB_SERVIDOR = "localhost";
-    const DB_NOMBRE = "biblioteca_bd";
+    const DB_NOMBRE = "biblioteca_bd_2";
     const DB_USUARIO = "root";
     const DB_CONTRA = "";
 
