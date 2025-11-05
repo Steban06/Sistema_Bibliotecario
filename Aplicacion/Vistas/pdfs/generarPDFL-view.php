@@ -66,7 +66,7 @@ function Footer()
 }
 }
 
-$mysqli = new mysqli("localhost", "root","","biblioteca_bd");
+$mysqli = new mysqli("localhost", "root","","biblioteca_bd_2");
 $consulta = ("SELECT * FROM  libros");
 $resultado = $mysqli->query($consulta);
 

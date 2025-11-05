@@ -64,7 +64,7 @@ header("Content-Disposition: attachment; filename=Reporte-de-Libros.xls");
 
 <?php // Abre la etiqueta <table> aquí
 
-$mysqli = new mysqli("localhost", "root","","biblioteca_bd");
+$mysqli = new mysqli("localhost", "root","","biblioteca_bd_2");
 $consulta = "SELECT * FROM libros";
 $resultado = $mysqli->query($consulta);
 $mysqli->set_charset("utf8mb4");
